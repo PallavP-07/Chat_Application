@@ -1,0 +1,84 @@
+.Main_container {
+  display: flex;
+  justify-content: space-between;
+  height: 87vh;
+  overflow: hidden;
+  .Chat_Section {
+    overflow-y: auto;
+    background-color: rgba(210, 174, 174, 0.185);
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 15px;
+   flex: 1;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.15);
+    margin: 6px;
+    
+      
+        .chat_list{
+            background-color: rgba(255, 255, 255, 0.313);
+        border: 1px solid rgb(212, 212, 212);
+        border-radius: 10px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.15);
+        display: flex;
+        padding: 6px;
+        margin: 4px;
+        }
+    
+   
+  }
+  .Message_Section{
+    background-color: rgba(247, 247, 247, 0.185);
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 15px;
+    flex: 2;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.15);
+    margin: 4px;
+  }
+  .Profile_Section{
+    background-color: rgba(52, 45, 56, 0.445);
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 15px;
+    flex: 1;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.15);
+    margin: 6px;
+  }
+
+  .Chat_Section::-webkit-scrollbar { /* Target WebKit browsers */
+    width: 6px; /* Adjust width of the scrollbar track */
+    background-color:transparent; /* Set background color of the track */
+    visibility: hidden;
+    
+  }
+  
+  .Chat_Section::-webkit-scrollbar-thumb { /* Target scrollbar thumb */
+    background-color: #ff00006d; /* Set background color of the thumb */
+    border-radius: 6px; /* Add rounded corners to the thumb */
+  }
+  
+  .Chat_Section::-webkit-scrollbar-thumb:hover { /* Style on hover */
+    background-color: #01ff12;
+    /* Change color on hover */
+  }
+}
+
+
+@media (max-width:487px){
+  .Chat_Section{
+    display: block;
+  }
+  .Message_Section{
+    display: none;
+  }
+  .Profile_Section{
+    display: none;
+  }
+}
+
+@media (max-width:769px){
+  .Chat_Section{
+    display: block;
+  }
+ 
+  .Profile_Section{
+    display: none;
+  }
+}
